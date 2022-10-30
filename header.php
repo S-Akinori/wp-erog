@@ -21,7 +21,7 @@
 <body>
   <header class="header">
     <div class="flex justify-between items-center p-4">
-      <div class="c-logo"><a href="<?= home_url(); ?>">Logo</a></div>
+      <div class="c-logo"><a href="<?= home_url(); ?>"><?= get_bloginfo(); ?></a></div>
       <button class="js-menu-button flex items-center justify-center md:hidden">
         <span class="material-icons">
           menu
