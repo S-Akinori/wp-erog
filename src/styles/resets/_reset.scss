@@ -26,14 +26,17 @@ body {
 main {
   padding-bottom: 3rem;
   min-height: 100vh;
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 video {
   width: 100%;
 }
+iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
 h1 {
   font-size: 1.5rem;
-  margin-bottom: 2rem;
 }
 h2 {
   font-size: 1.25rem;
@@ -96,10 +99,6 @@ input:focus, textarea:focus {
 /* label {
   padding: 0.5rem;
 } */
-
-iframe {
-  max-width: 100%;
-}
 
 .text {
   padding: 1rem;

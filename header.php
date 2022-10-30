@@ -20,7 +20,7 @@
 </head>
 <body>
   <header class="header">
-    <div class="flex justify-between items-center">
+    <div class="flex justify-between items-center p-4">
       <div class="c-logo"><a href="<?= home_url(); ?>">Logo</a></div>
       <button class="js-menu-button flex items-center justify-center">
         <span class="material-icons">
@@ -28,19 +28,9 @@
         </span>
       </button>
     </div>
+    <?php wp_nav_menu(array(
+      'theme_location' => 'header',
+      'menu_class' => 'p-header-menu'
+    )); ?>
   </header>
-  <div id="jsNav" class="l-nav-container">
-    <button class="js-menu-button absolute right-16 top-16 flex items-center justify-center">
-    <span class="material-icons text-gray-400">close</span>
-    </button>
-    <nav>
-      <ul>
-        <li><a href="">Link</a></li>
-        <li><a href="">Link</a></li>
-        <li><a href="">Link</a></li>
-        <li><a href="">Link</a></li>
-        <li><a href="">Link</a></li>
-      </ul>
-    </nav>
-  </div>
   <main>

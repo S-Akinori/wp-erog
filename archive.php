@@ -1,29 +1,25 @@
 <?php get_header(); ?>
-  <div class="c-fv">
-    <div class="c-fv__image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/fv-top.jpg" alt="" /></div>
-    <div class="c-fv__text-container">
-      <div class="c-fv__text-container__title">サンプルタイトル</div>  
-    </div>
+<div class="c-fv">
+  <div class="c-fv__image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/fv-top.jpg" alt="" /></div>
+  <div class="c-fv__text-container">
+    <div class="c-fv__text-container__title"><?php single_cat_title(); ?></div>  
   </div>
+</div>
   <div class="p-4 container mx-auto">
     <?php get_template_part('./inc/components/popular-posts', null) ?>
   </div>
-  <div class="container mx-auto md:flex">
+  <div class="container p-4 mx-auto md:flex">
     <div class="md:w-2/3">
       <div class="flex flex-wrap">
         <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
         <div class="p-post-box md:w-1/2">
           <div>
-            <div class="relative">
+            <div>
               <a href="<?php the_permalink() ?>"><img src="<?= has_post_thumbnail() ? get_the_post_thumbnail_url('', 'full') : get_template_directory_uri() . '/assets/images/no-image.jpg' ?>" width="1200" height="800" alt="<?php the_title(); ?>"></a>
-              <div class="absolute right-0 bottom-0 bg-white text-sm px-2 py-1"><?php the_field('duration'); ?></div>
             </div>
             <div>
               <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
-              <div class="flex justify-between mb-2">
-                <div class="text-sm"><?php the_date() ?></div>
-                <div class="text-sm bg-main px-2"><?php the_field('view'); ?>views</div>
-              </div>
+              <p><?php the_date() ?></p>
               <p><?php echo esc_html(get_the_excerpt()); ?></p>
             </div>
           </div>

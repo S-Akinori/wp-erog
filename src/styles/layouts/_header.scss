@@ -2,8 +2,10 @@
 
 .header {
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 9999;
-  padding: 1rem;
+  background: var(--main-color);
   min-height: 80px;
   width: 100%;
 }

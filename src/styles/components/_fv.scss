@@ -1,5 +1,6 @@
+@use '../global/mixins/media.scss';
 .c-fv {
-  height: 80vh;
+  height: 30vh;
   position: relative;
 }
 .c-fv__image {
@@ -25,4 +26,10 @@
 
 .c-fv__text-container__title {
   font-size: 2rem;
+}
+
+@include media.md {
+  .c-fv {
+    height: 50vh;
+  }
 }

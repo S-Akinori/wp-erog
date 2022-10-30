@@ -24,8 +24,11 @@ module.exports = {
     rules: [
       // Sassファイルの読み込みとコンパイル
       {
-        test: /\.scss/, // 対象となるファイルの拡張子
+        test: /\.(sass|scss|css)$/, // 対象となるファイルの拡張子
         use: [
+          {
+            loader: 'style-loader',
+          },
           // CSSファイルを書き出すオプションを有効にする
           {
             loader: MiniCssExtractPlugin.loader,

@@ -1,0 +1,10 @@
+.p-header-menu {
+  display: flex;
+  width: 100%;
+}
+.p-header-menu li {
+  padding: .5rem;
+  background: var(--main-color);
+  width: 100%;
+  text-align: center;
+}
