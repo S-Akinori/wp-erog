@@ -25,7 +25,9 @@
 }
 
 .c-fv__text-container__title {
-  font-size: 2rem;
+  padding: 0 1.5rem;
+  max-width: 768px;
+  width: 100%;
 }
 
 @include media.md {

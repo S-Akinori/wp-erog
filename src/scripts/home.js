@@ -1,6 +1,9 @@
 import $ from './jquery'
+import { adjustMainPadding } from './modules/adjustMainPadding'
 import {Swiper} from './modules/swiper'
+import { toggleMenu } from './modules/toggleMenu'
 
 $(function() {
-  console.log('hello from home page')
+  adjustMainPadding();
+  toggleMenu();
 })

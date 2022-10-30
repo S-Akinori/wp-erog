@@ -1,6 +1,9 @@
 <aside>
   <div class="mb-4">
-    <h2>カテゴリー</h2>
+    <?php get_search_form(); ?>
+  </div>
+  <div class="mb-4">
+    <h2 class="c-title">カテゴリー</h2>
     <?php wp_nav_menu(array(
       'theme_location' => 'sidebar',
       'menu_class' => 'p-sidebar-menu'

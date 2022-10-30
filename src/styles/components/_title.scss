@@ -1,0 +1,16 @@
+.c-title {
+  position: relative;
+  padding-bottom: .25rem;
+  margin-bottom: .5rem;
+}
+
+.c-title::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 1px;
+  background: var(--accent-color);
+}

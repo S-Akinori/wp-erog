@@ -6,6 +6,11 @@
   left: 0;
   z-index: 9999;
   background: var(--main-color);
-  min-height: 80px;
   width: 100%;
+}
+
+@include media.md {
+  .header {
+    min-height: 80px;
+  } 
 }

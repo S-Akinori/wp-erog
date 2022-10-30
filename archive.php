@@ -2,7 +2,7 @@
 <div class="c-fv">
   <div class="c-fv__image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/fv-top.jpg" alt="" /></div>
   <div class="c-fv__text-container">
-    <div class="c-fv__text-container__title"><?php single_cat_title(); ?></div>  
+    <div class="c-fv__text-container__title text-xl text-center"><?php single_cat_title(); ?></div>  
   </div>
 </div>
   <div class="p-4 container mx-auto">

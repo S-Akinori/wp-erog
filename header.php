@@ -22,15 +22,19 @@
   <header class="header">
     <div class="flex justify-between items-center p-4">
       <div class="c-logo"><a href="<?= home_url(); ?>">Logo</a></div>
-      <button class="js-menu-button flex items-center justify-center">
+      <button class="js-menu-button flex items-center justify-center md:hidden">
         <span class="material-icons">
           menu
         </span>
       </button>
     </div>
-    <?php wp_nav_menu(array(
-      'theme_location' => 'header',
-      'menu_class' => 'p-header-menu'
-    )); ?>
+    <div class="p-header-menu js-header-menu">
+      <div class="p-4 md:hidden"><?php get_search_form(); ?></div>
+      <?php wp_nav_menu(array(
+        'container' => 'nav',
+        'theme_location' => 'header',
+        'menu_class' => 'p-header-menu__nav'
+      )); ?>
+    </div>
   </header>
   <main>

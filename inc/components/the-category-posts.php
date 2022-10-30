@@ -6,7 +6,7 @@ $is_flex = $args['is_flex'] ?? false;
 ?>
 
 <div class="category-posts">
-  <h2><?= $title; ?></h2>
+  <h2 class="c-title"><?= $title; ?></h2>
   <div>
     <div class="<?= $is_flex ? 'md:flex flex-wrap' : '' ?>">
         <?php

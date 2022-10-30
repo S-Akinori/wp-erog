@@ -7,7 +7,7 @@ $is_flex = $args['is_flex'] ?? false;
 ?>
 
 <div class="popular-posts">
-  <h2><?= $title; ?></h2>
+  <h2 class="c-title"><?= $title; ?></h2>
   <?php if($is_swiper): ?>
   <div class="swiper">
     <div class="swiper-wrapper">

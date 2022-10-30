@@ -19,7 +19,7 @@
   "files": [
     "assets/**/*.css",
     "assets/**/*.js",
-    "**/*.php",
+    // "**/*.php",
   ],
   "watchEvents": [
       "change"

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <article>
-  <div class="mx-auto container mb-12">
+  <div class="mx-auto container my-12">
     <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
     <div>
       <div>
@@ -11,7 +11,7 @@
         <p><?php the_date(); ?></p>
         <div><?php the_tags('<ul class="p-tag-list"><li class="p-tag-list__item p-tag-list__item--first">', '</li><li class="p-tag-list__item">', '</li></ul>'); ?></div>
       </div>
-      <div class="mt-8">
+      <div class="mt-8 px-4">
         <?php the_content(); ?>
       </div>
     </div>
