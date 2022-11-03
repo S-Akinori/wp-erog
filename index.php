@@ -32,7 +32,7 @@
         <div class="p-post-box md:w-1/2">
           <div>
             <div class="relative">
-              <a href="<?php the_permalink() ?>"><img src="<?= has_post_thumbnail() ? get_the_post_thumbnail_url('', 'full') : get_template_directory_uri() . '/assets/images/no-image.jpg' ?>" width="1200" height="800" alt="<?php the_title(); ?>"></a>
+              <a href="<?php the_permalink() ?>"><img src="<?= has_post_thumbnail() ? get_the_post_thumbnail_url('', 'full') : the_field('thumbnail'); ?>" width="1200" height="800" alt="<?php the_title(); ?>"></a>
               <div class="absolute right-0 bottom-0 bg-white text-sm px-2 py-1"><?php the_field('duration'); ?></div>
             </div>
             <div>

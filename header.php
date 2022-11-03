@@ -1,3 +1,8 @@
+<?php 
+  // if($_SESSION['age_verification'] === false && !is_404()) {
+  //   wp_redirect('404');
+  // }
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -37,4 +42,24 @@
       )); ?>
     </div>
   </header>
+  <!-- <?php if($_SESSION['age_verification'] === null) : ?>
+  <div id="ageVerification" class="fixed top-0 left-0 w-full h-full bg-white" style="z-index: 9999;">
+    <div class="flex items-center justify-center w-full h-full">
+      <div class="p-4 mx-4 border w-full md:w-1/2">
+        <div class="text-center text-xl">年齢確認</div>
+        <div class="text-center">18歳以上ですか？</div>
+        <form action="<?= get_template_directory_uri() ?>/inc/functions/verify-age.php" method="POST">
+          <div class="flex mt-8">
+            <div class="w-1/2 px-4">
+              <button type="submit" name="age_verification" value="0" class="c-button block w-full">いいえ</button>
+            </div>
+            <div class="w-1/2 px-4">
+              <button type="submit" name="age_verification" value="1" class="c-button bg-main block w-full">はい</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <?php endif; ?> -->
   <main>
