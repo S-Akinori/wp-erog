@@ -6,6 +6,8 @@ require_once __DIR__ . '/inc/functions/get-video-data.php';
 require_once __DIR__ . '/inc/admin/scraping.php';
 // require_once __DIR__ . '/inc/functions/verify-age.php';
 
+require_once __DIR__ . '/inc/widgets/widget.php';
+
 add_theme_support('post-thumbnails');
 // add_theme_support('menus');
 
@@ -17,16 +19,7 @@ function register_my_menus() {
      )
    );
  }
- add_action( 'init', 'register_my_menus' );
-
- function theme_slug_widgets_init() {
-  register_sidebar( array(
-      'name' => 'トップFV下', //ウィジェットの名前を入力
-      'id' => 'top_fv_bottom', //ウィジェットに付けるid名を入力,
-      'class' => 'p-top_fv_bottom'
-  ) );
-}
-add_action( 'widgets_init', 'theme_slug_widgets_init' );
+add_action( 'init', 'register_my_menus' );
 
 function init_session_start() {
   // セッションが開始されていなければここで開始
@@ -36,3 +29,17 @@ function init_session_start() {
 }
 
 add_action( 'init', 'init_session_start' );
+
+// カスタムヘッダー -------------------------
+$custom_header = array(
+  'random-default' => false,
+  'width' => 1920,
+  'height' => 1080,
+  'flex-height' => true,
+  'flex-width' => false,
+  'default-text-color' =>'',
+  'header-text' => true,
+  'uploads' => true,
+  'default-image' => get_stylesheet_directory_uri() . '/assets/images/fv-top.jpg',
+);
+add_theme_support('custom-header', $custom_header);

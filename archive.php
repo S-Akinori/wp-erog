@@ -1,8 +1,26 @@
 <?php get_header(); ?>
 <div class="c-fv">
-  <div class="c-fv__image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/fv-top.jpg" alt="" /></div>
+  <div class="c-fv__image"><img src="<?php header_image(); ?>" alt="<?php bloginfo('name'); ?>" /></div>
   <div class="c-fv__text-container">
-    <div class="c-fv__text-container__title text-xl text-center"><?php single_cat_title(); ?></div>  
+    <div class="c-fv__text-container__title">
+      <div class="mb-4 text-center text-xl"><?php single_cat_title(); ?></div>
+      <div class="mb-4"><?php get_search_form(); ?></div>
+      <div>
+        <ul class="p-tag-list">
+          <?php
+            $args = array(
+              'orderby' => 'count',
+              'order' => 'desc',
+              'number' => 10
+            );
+            $tags = get_terms('post_tag', $args);
+            foreach($tags as $tag) :
+          ?>
+            <li class="p-tag-list__item"><a href="<?= get_tag_link($tag->term_id); ?>"><?= $tag->name ?></a></li>
+          <?php endforeach; ?>
+        </ul>
+      </div>
+    </div>  
   </div>
 </div>
   <div class="p-4 container mx-auto">

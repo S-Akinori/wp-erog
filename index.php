@@ -1,8 +1,9 @@
 <?php get_header(); ?>
   <div class="c-fv">
-    <div class="c-fv__image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/fv-top.jpg" alt="" /></div>
+    <div class="c-fv__image"><img src="<?php header_image(); ?>" alt="<?php bloginfo('name'); ?>" /></div>
     <div class="c-fv__text-container">
       <div class="c-fv__text-container__title">
+        <div class="text-center mb-4"><?php bloginfo('description'); ?></div>
         <div class="mb-4"><?php get_search_form(); ?></div>
         <div>
           <ul class="p-tag-list">
