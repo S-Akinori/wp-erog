@@ -48,9 +48,7 @@
         </div>
         <?php endwhile; endif; ?>
       </div>
-      <?php if(function_exists("pagination")) {
-          pagination();
-      } ?>
+      <?php get_template_part('./inc/components/pagination', null) ?>
     </div>
     <div class="md:w-1/3 p-4">
       <?php get_sidebar(); ?>
