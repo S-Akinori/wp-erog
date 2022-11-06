@@ -31,9 +31,12 @@ main {
 video {
   width: 100%;
 }
-iframe {
+.video-container iframe {
   width: 100%;
   aspect-ratio: 16/9;
+}
+iframe {
+  max-width: 100%;
 }
 h1 {
   font-size: 1.5rem;

@@ -17,7 +17,7 @@ $is_flex = $args['is_flex'] ?? false;
           setup_postdata($post);
         ?>
         <div class="swiper-slide">
-          <a href="<?php the_permalink() ;?> "><img src="<?= has_post_thumbnail() ? get_the_post_thumbnail_url('', 'full') : get_template_directory_uri() . '/assets/images/no-image.jpg' ?>" width="1200" height="800" alt="<?php the_title(''); ?>"></a>
+          <a href="<?php the_permalink() ;?> "><img src="<?= has_post_thumbnail() ? get_the_post_thumbnail_url('', 'full') : the_field('thumbnail'); ?>"></a>
             <a href="<?php the_permalink() ;?> "><?php the_title(); ?></a>
         </div>
         <?php endforeach; ?>
@@ -35,7 +35,7 @@ $is_flex = $args['is_flex'] ?? false;
             setup_postdata($post);
           ?>
           <div class="py-4 md:px-4 <?= $is_flex ? 'md:w-1/3' : '' ?>">
-            <a href="<?php the_permalink() ;?> "><img src="<?= has_post_thumbnail() ? get_the_post_thumbnail_url('', 'full') : get_template_directory_uri() . '/assets/images/no-image.jpg' ?>" width="1200" height="800" alt="<?php the_title(''); ?>"></a>
+            <a href="<?php the_permalink() ;?> "><img src="<?= has_post_thumbnail() ? get_the_post_thumbnail_url('', 'full') : the_field('thumbnail'); ?>"></a>
               <a href="<?php the_permalink() ;?> "><?php the_title(); ?></a>
           </div>
           <?php endforeach; ?>

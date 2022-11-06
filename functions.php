@@ -4,6 +4,7 @@ require_once __DIR__ . '/inc/functions/get-popular-posts.php';
 require_once __DIR__ . '/inc/functions/get-posts-by-category.php';
 require_once __DIR__ . '/inc/functions/get-video-data.php';
 require_once __DIR__ . '/inc/admin/scraping.php';
+require_once __DIR__ . '/inc/admin/ads-menu.php';
 // require_once __DIR__ . '/inc/functions/verify-age.php';
 
 require_once __DIR__ . '/inc/widgets/widget.php';

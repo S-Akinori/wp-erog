@@ -4,7 +4,7 @@
     "watch": "webpack --watch",
     "start": "webpack serve",
     "server": "browser-sync start --config \"./bs-config.js\"",
-    "tw --watch": "tailwindcss -i ./src/tw.css -o ./assets/styles/tw.css --watch",
+    "tw-watch": "tailwindcss -i ./src/tw.css -o ./assets/styles/tw.css --watch",
     "tw": "tailwindcss -i ./src/tw.css -o ./assets/styles/tw.css --minify"
   },
   "devDependencies": {

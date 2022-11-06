@@ -23,8 +23,14 @@
       </div>
     </div>
   </div>
+  <div class="flex justify-center">
+    <iframe src="https://www.ppc-direct.com/index21.html?affid=227018" width="300" height="100" frameborder="no" scrolling="no" title="バナー"></iframe>
+  </div>
   <div class="p-4 container mx-auto">
     <?php get_template_part('./inc/components/popular-posts', null) ?>
+  </div>
+  <div class="flex justify-center">
+    <iframe src="https://www.ppc-direct.com/index21.html?affid=227018" width="300" height="100" frameborder="no" scrolling="no" title="バナー"></iframe>
   </div>
   <div class="container mx-auto md:flex">
     <div class="md:w-2/3">
@@ -49,6 +55,9 @@
         <?php endwhile; endif; ?>
       </div>
       <?php get_template_part('./inc/components/pagination', null) ?>
+      <div class="flex justify-center">
+        <iframe src="https://www.ppc-direct.com/index35.html?affid=227018" width="320" height="950" frameborder="no" scrolling="no" title="バナー"></iframe>
+      </div>
     </div>
     <div class="md:w-1/3 p-4">
       <?php get_sidebar(); ?>
